@@ -1,0 +1,10 @@
+You can export any top-level function, class, var, let, or const.
+
+
+All flavors of import and export are allowed only at toplevel in a module. There are no *conditional* imports or exports, and you can’t use import in function scope.
+
+
+Module objects are *frozen*. There is no way to hack a new feature into a module object, polyfill style.
+
+
+There is no error recovery for import errors. An app may have hundreds of modules in it, and if anything fails to load or link, nothing runs. You can’t import in a *try/catch block*. (The upside here is that because the system is so static, webpack can detect those errors for you at compile time.)
