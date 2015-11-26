@@ -47,5 +47,5 @@ fn2("A", undefined, "myc");
 function fn3(param1, param2="2", param3){ // param3 become optional, yo~
   console.log('~~~~~~>', param1, param2, param3);
 }
-//fn();//Error!!!
+//fn3();//Error!!!
 fn3(1);//mini-call
