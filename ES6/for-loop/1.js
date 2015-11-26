@@ -18,7 +18,7 @@ console.log('-------');
 // NOW, World is changed via ES6!
 //
 for(var val of myArray){ //more handsome&beauty way
-  // if (val=='a') {continue;}
+  //if (val=='b') {break;}
   // if (val=='c') {break;}
   console.log('val='+val);
   console.log('go next, yo');

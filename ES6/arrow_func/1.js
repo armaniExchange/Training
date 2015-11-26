@@ -1,7 +1,8 @@
 var _ = require('lodash');
 
 function fn1(){
-  return a => a>0; // means: return function(a){ return a>0; }
+  return a => a>0; 
+  // means: return function(a){ return a>0; }
 }
 let fn1a = fn1();
 console.log('fn1a(-1)', fn1a(-1));

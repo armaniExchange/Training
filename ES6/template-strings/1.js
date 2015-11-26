@@ -20,19 +20,23 @@ let var3 = {aaa:'aaa1', bbb:'bbb1'};
 console.log(`line1
 line2 ${var3.aaa}
     line3
-  ${var3.bbb}        line4
+  ${var3.bbb  ? 'Y' : 'N'}        line4
   line5`);
 
-function fn0(str){
-  return str;
+function fn0(ary, a, b, c, d, e){
+  console.log(ary, a, b, c, d, e);
+  return ary;
 }
-console.log(fn0`aaaa11111`);
+console.log(fn0`aaa${var1}a111${var2}11`);
+
+
 function fn1(str){
   var str = str[0];
   return str;
 }
 console.log(fn1`aaaa2222222`);
 function fn2(str){
+  console.log(str, a, b, c, d, e);
   return str;
 }
 console.log(fn2(`aaaa333333`));

@@ -10,3 +10,8 @@ function resizeCanvas() {
 }
 
 export const CONST_ME = 'const me <----------------';
+
+let fn = function(){
+	console.log('fn run!!!')
+}
+export default fn;

@@ -6,7 +6,7 @@
 console.log('start');
 // const theFairest;  // SyntaxError, you troublemaker
 console.log('start2');
-const theFairest2 = null;  
+const theFairest2 = null;
 console.log('start3');
 const theFairest3 = undefined;
 console.log('start4');
@@ -28,4 +28,5 @@ console.log('start10');
 theFairest7.a = 111;
 theFairest9[0] = 'x1';
 console.log('after:', theFairest7.a);
-console.log('after:', theFairest9[0])
+console.log('after:', theFairest9[0]);
+

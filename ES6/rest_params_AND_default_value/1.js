@@ -28,24 +28,27 @@ console.log('ES6 part1:', containsAllES6([1,2,3,4], 1,2,5));
 console.log('ES6 part2:', containsAllES6([1,2,3,4], 4,1,2));
 
 //default value DEMO
-function fn(a="a1", b="b2"){
+function fn(a="a1", b="b2", c={a:1}){
   console.log('------>', a, b);
+  c.a++;
+  console.log(c.a);//in py, c.a will ++++++
 }
-fn();
-fn("zz");
-fn("zz", "yy");
+fn();//a1, b2
+fn("zz");//zz  b2
+fn("zz", "yy");//zz yy
+fn("zz", "yy")
 
 
 function fn2(a="a1", b="b2", c=(a==="A") ? "C3" : "cc", d="d4"){
   console.log('==========>','a='+a, 'b='+b, 'c='+c, 'd='+d);
 }
-fn2();
-fn2("a1");
+fn2();//a1 b2 cc d4
+fn2("a1"); //a1 b2 
 fn2("A", "");
-fn2("A", undefined, "myc");
+fn2("A", null, "myc");
 
 function fn3(param1, param2="2", param3){ // param3 become optional, yo~
   console.log('~~~~~~>', param1, param2, param3);
 }
 //fn3();//Error!!!
-fn3(1);//mini-call
+fn3();//mini-call

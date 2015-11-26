@@ -20,6 +20,12 @@ if(true){
   let a = 10;
   var b = 1;
 }
+
+var b;
+if(true){
+  let a= 10;
+  b=1;
+}
 //console.log('a='+a); // ReferenceError: a is not defined.
 console.log('b='+b); // 1
 
@@ -29,13 +35,15 @@ for(let i = 0; i < arr.length; i++){
 }
 //console.log(i); //ReferenceError: i is not defined
 
-for(var i = 0; i < arr.length; i++){
+var i;
+for(i = 0; i < arr.length; i++){
 }
 console.log('i='+i); //i=10
 
 
 var a = [];
-for (var i = 0; i < 10; i++) { //sharing i memory
+var i;
+for (i = 0; i < 10; i++) { //sharing i memory
   a[i] = function () {
     console.log('(part2) i='+i);
   };
@@ -57,11 +65,13 @@ a[4]();
 
 console.log(typeof notfoundme);
 
+
+var tmp1;
 if(true){
   console.log('tmp', tmp); //<---still 变量提升??
   console.log('tmp1', tmp1);
   let tmp = 2;
-  var tmp1= 2;
+  tmp1= 2;
 }
 console.log('------->', tmp1)
 

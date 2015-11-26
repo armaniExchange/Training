@@ -1,12 +1,13 @@
 class Circle {
     constructor(radius) {
         console.log('you did new me<-------------------');
-        this.radius = radius;
-        Circle.circlesMade++;
+        this.radius = radius;//instance @ constructor
+        Circle.circlesMade++;//static
     };
 
     static draw(circle, canvas) {
         // Canvas drawing code
+        console.log('Circle.circlesMade=', this.circlesMade);
         console.log('!!!Drawing circle.radius=' + circle.radius + ' on canvas');
     };
 

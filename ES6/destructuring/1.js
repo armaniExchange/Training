@@ -1,6 +1,6 @@
 
 var someArray  = [1,2,3,4,5,6,7];
-let [first, second, third] = someArray;
+var [first, second, third] = someArray;
 console.log(first, second, third);
 
 first = 1111;
@@ -17,8 +17,8 @@ var [,,z] = ["foo", "bar", "baz"];
 console.log(z);//"baz"
 
 console.log('===========');
-var [head, ...tail] = [1, 2, 3, 4];
-console.log(tail); //tail is just a variable name
+var [head, ...tail0] = [1, 2, 3, 4];
+console.log(tail0); //tail is just a variable name
 
 
 var a = [undefined, undefined, undefined, undefined];
@@ -34,6 +34,7 @@ var { foo, bar } = { foo: "lorem", bar: "ipsum" };
 console.log(foo); // "lorem"
 console.log(bar); // "ipsum"
 
+var foo2 = 'eeee';
 var { foo2:foo2, bar2:alias2 } = { foo2: "lorem2", bar2: "ipsum2" };
 console.log('alias2='+alias2);
 console.log('foo2='+foo2);

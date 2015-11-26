@@ -2,8 +2,8 @@
 
 
 var iterableObj = [1,2,3,4];
-var iterableObj2 = [...iterableObj, 'a', 'b', 'c'];
-var iterableObj3 = ['a', 'b',...iterableObj, 'c'];
+var iterableObj2 = [iterableObj, 'a', 'b', 'c'];
+var iterableObj3 = ['a', 'b',iterableObj, 'c'];
 console.log(iterableObj2);
 console.log(iterableObj3);
 
